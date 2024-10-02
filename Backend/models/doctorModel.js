@@ -15,7 +15,7 @@ const doctorSchema = new mongoose.Schema(
     slots_booked: { type: Object, default: {} },
     address: { type: Object, required: true },
     hospital: { type: String, required: true },
-    date: { type: Number, required: true },
+    date: { type: String, required: true },
   },
   { minimize: false }
 );

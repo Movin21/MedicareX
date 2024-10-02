@@ -41,7 +41,7 @@ const Hospitals = () => {
               <p className="text-[#5C5C5C] text-sm mb-2">{hospital.address}</p>
               <div className="flex justify-between items-center">
                 <p className="text-[#5C5C5C] text-sm">
-                  {hospital.doctors?.length || 0} Doctors Available
+                  {hospital.totalDoctors} Doctors Available
                 </p>
                 <button className="text-blue-600 text-sm hover:underline">
                   View Doctors
