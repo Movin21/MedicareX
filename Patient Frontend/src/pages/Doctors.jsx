@@ -112,10 +112,10 @@ const Doctors = () => {
                 navigate(`/appointment/${doctor._id}`);
                 scrollTo(0, 0);
               }}
-              className="border border-[#C9D8FF] rounded-xl overflow-hidden cursor-pointer hover:translate-y-[-10px] transition-all duration-500 shadow-sm hover:shadow-md"
+              className="border border-[#ffc9c9] rounded-xl overflow-hidden cursor-pointer hover:translate-y-[-10px] transition-all duration-500 shadow-sm hover:shadow-md"
             >
               <img
-                className="h-48 w-full object-cover bg-[#EAEFFF]"
+                className="h-48 w-full object-cover bg-[#ffeaea]"
                 src={`${doctor.image}`}
                 alt={doctor.name}
               />

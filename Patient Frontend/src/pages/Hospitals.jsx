@@ -22,7 +22,7 @@ const Hospitals = () => {
               );
               scrollTo(0, 0);
             }}
-            className="border border-[#C9D8FF] rounded-xl overflow-hidden cursor-pointer hover:translate-y-[-10px] transition-all duration-500 bg-white shadow-sm hover:shadow-md"
+            className="border border-[#ffc9c9] rounded-xl overflow-hidden cursor-pointer hover:translate-y-[-10px] transition-all duration-500 bg-white shadow-sm hover:shadow-md"
           >
             <img
               className="h-48 w-full object-cover"
@@ -34,7 +34,7 @@ const Hospitals = () => {
                 <h2 className="text-[#262626] text-lg font-medium">
                   {hospital.name}
                 </h2>
-                <span className="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">
+                <span className="bg-red-50 text-red-700 text-xs px-2 py-1 rounded">
                   {hospital.type}
                 </span>
               </div>
@@ -43,7 +43,7 @@ const Hospitals = () => {
                 <p className="text-[#5C5C5C] text-sm">
                   {hospital.totalDoctors} Doctors Available
                 </p>
-                <button className="text-blue-600 text-sm hover:underline">
+                <button className="text-red-800 text-sm hover:underline">
                   View Doctors
                 </button>
               </div>

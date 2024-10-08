@@ -95,7 +95,7 @@ const MyProfile = () => {
         <p className="text-gray-600 underline mt-3">CONTACT INFORMATION</p>
         <div className="grid grid-cols-[1fr_3fr] gap-y-2.5 mt-3 text-[#363636]">
           <p className="font-medium">Email id:</p>
-          <p className="text-blue-500">{userData.email}</p>
+          <p className="text-red-700">{userData.email}</p>
           <p className="font-medium">Phone:</p>
 
           {isEdit ? (
@@ -108,7 +108,7 @@ const MyProfile = () => {
               value={userData.phone}
             />
           ) : (
-            <p className="text-blue-500">{userData.phone}</p>
+            <p className="text-red-700">{userData.phone}</p>
           )}
 
           <p className="font-medium">Address:</p>
@@ -188,7 +188,7 @@ const MyProfile = () => {
       <div className="mt-6">
         <button
           onClick={openModal}
-          className="bg-blue-500 text-white px-6 py-2 rounded-full hover:bg-blue-600 transition-colors"
+          className="bg-red-800 text-white px-6 py-2 rounded-full hover:bg-red-900 transition-colors"
         >
           View My Health Card
         </button>
