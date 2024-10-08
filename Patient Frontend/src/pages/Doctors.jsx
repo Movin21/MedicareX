@@ -96,7 +96,7 @@ const Doctors = () => {
               key={item}
               onClick={() => handleSpecialityClick(item)}
               className={`w-[94vw] sm:w-auto pl-3 py-1.5 pr-16 border border-gray-300 rounded transition-all cursor-pointer ${
-                speciality === item ? "bg-[#E2E5FF] text-black" : ""
+                speciality === item ? "bg-[#f9e2e2] text-black" : ""
               }`}
             >
               {item}
@@ -122,12 +122,12 @@ const Doctors = () => {
               <div className="p-4">
                 <div
                   className={`flex items-center gap-2 text-sm text-center ${
-                    doctor.available ? "text-green-500" : "text-gray-500"
+                    doctor.available ? "text-green-700" : "text-gray-500"
                   }`}
                 >
                   <p
                     className={`w-2 h-2 rounded-full ${
-                      doctor.available ? "bg-green-500" : "bg-gray-500"
+                      doctor.available ? "bg-green-700" : "bg-gray-500"
                     }`}
                   ></p>
                   <p>{doctor.available ? "Available" : "Not Available"}</p>

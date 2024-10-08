@@ -17,26 +17,22 @@ const MedicareXCard = ({ userData }) => {
     <div className="max-w-md mx-auto">
       <div
         id="medicareX-card"
-        className="bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-lg overflow-hidden shadow-lg p-6"
+        className="bg-gradient-to-r from-red-900 to-red-700 text-white rounded-lg overflow-hidden shadow-lg p-6"
       >
         <div className="flex justify-between items-start mb-4">
           <div>
             <h2 className="text-2xl font-bold">MedicareX</h2>
             <p className="text-sm">Health Insurance Card</p>
           </div>
-          <img
-            src="/medicareX-logo.png"
-            alt="MedicareX Logo"
-            className="h-12"
-          />
         </div>
-        <div className="flex mb-4">
+        <div className="flex mb-4 ">
           <img
-            src={userData.image}
+            src={userData.image || "https://via.placeholder.com/150"} // Fallback to a placeholder image
             alt="Profile"
-            className="w-24 h-24 rounded-lg mr-4 border-2 border-white"
+            className="w-32 h-32  border-4 border-gray-200 object-cover shadow-lg"
           />
-          <div>
+
+          <div className="ml-10">
             <h3 className="text-xl font-semibold">{userData.name}</h3>
             <p className="text-sm">ID: {userData.id}</p>
             <p className="text-sm">DOB: {userData.dob}</p>
@@ -73,7 +69,7 @@ const MedicareXCard = ({ userData }) => {
       </div>
       <button
         onClick={downloadCard}
-        className="mt-4 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition-colors w-full"
+        className="mt-4 bg-red-800 text-white px-4 py-2 rounded hover:bg-red-900 transition-colors w-full"
       >
         Download Card
       </button>
