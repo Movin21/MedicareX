@@ -22,7 +22,7 @@ const MedicareXCard = ({ userData }) => {
         <div className="flex justify-between items-start mb-4">
           <div>
             <h2 className="text-2xl font-bold">MedicareX</h2>
-            <p className="text-sm">Health Insurance Card</p>
+            <p className="text-sm">Digital Health Card</p>
           </div>
         </div>
         <div className="flex mb-4 ">
