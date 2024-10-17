@@ -8,6 +8,17 @@ import { v2 as cloudinary } from "cloudinary";
 import stripe from "stripe";
 import razorpay from "razorpay";
 
+/**Command Design Pattern  */
+class CreateUserCommand {
+  constructor(userService, userData) {
+    this.userService = userService;
+    this.userData = userData;
+  }
+
+  execute() {
+    return this.userService.createUser(this.userData);
+  }
+}
 // Gateway Initialize
 const stripeInstance = new stripe(process.env.STRIPE_SECRET_KEY);
 const razorpayInstance = new razorpay({

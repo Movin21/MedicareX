@@ -6,6 +6,17 @@ import validator from "validator";
 import { v2 as cloudinary } from "cloudinary";
 import userModel from "../models/userModel.js";
 
+/**Command Design Pattern  */
+class CreateadminCommand {
+  constructor(adminService, adminData) {
+    this.adminService = adminService;
+    this.adminData = adminData;
+  }
+
+  execute() {
+    return this.adminService.createadmin(this.adminData);
+  }
+}
 // API for admin login
 const loginAdmin = async (req, res) => {
   try {

@@ -1,5 +1,16 @@
 import Hospital from "../models/hospitalModel.js";
 
+/**Command Design Pattern  */
+class CreateHospitalCommand {
+  constructor(hospitalService, hospitalData) {
+    this.hospitalService = hospitalService;
+    this.hospitalData = hospitalData;
+  }
+
+  execute() {
+    return this.hospitalService.createhospital(this.hospitalData);
+  }
+}
 // Get all hospitals
 export const getAllHospitals = async (req, res) => {
   try {
